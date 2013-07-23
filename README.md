@@ -12,7 +12,7 @@ source install.sh
 ```
 
 Update
--------
+------
 
 ```
 source ~/dotfiles/install.sh
