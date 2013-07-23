@@ -15,6 +15,5 @@ Update
 -------
 
 ```
-cd dotfiles
-source install.sh
+source ~/dotfiles/install.sh
 ```
