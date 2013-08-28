@@ -12,7 +12,14 @@
 	"font_size": 13.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
-	"indent_guide_options": ["draw_active"],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_active"
+	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"margin": 0,
