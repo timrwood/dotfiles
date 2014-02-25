@@ -1,0 +1,4 @@
+[
+	{ "keys": ["super+ctrl+left"], "command": "toggle_side_bar" },
+	{ "keys": ["super+ctrl+right"], "command": "toggle_minimap" }
+]
