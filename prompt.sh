@@ -20,19 +20,19 @@ bldwht='\033[1;37m' # White
 dir_listing_color=$bldwht
 
 # Set colors for different repository states
-unmerged_color=$bldpur
-unstaged_color=$bldred
-staged_color=$bldcyn
-clean_color=$bldwht
+unmerged_color=$txtpur
+unstaged_color=$txtred
+staged_color=$txtgrn
+clean_color=$txtwht
 
 function git_color {
 	git_status=`git status 2> /dev/null`
 
-	if [ -n "`echo $git_status | grep "# Unmerged paths:"`" ]; then
+	if [ -n "`echo $git_status | grep "Unmerged paths:"`" ]; then
 		echo -e $unmerged_color
-	elif [ -n "`echo $git_status | grep "# Changes not staged for commit:"`" ]; then
+	elif [ -n "`echo $git_status | grep "Changes not staged for commit:"`" ]; then
 		echo -e $unstaged_color
-	elif [ -n "`echo $git_status | grep "# Changes to be committed:"`" ]; then
+	elif [ -n "`echo $git_status | grep "Changes to be committed:"`" ]; then
 		echo -e $staged_color
 	else
 		echo -e $clean_color
